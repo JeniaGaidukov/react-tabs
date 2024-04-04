@@ -1,0 +1,3 @@
+bgcolor - #E6E4BF
+color hover icon - #636403
+color icon - #48473A
