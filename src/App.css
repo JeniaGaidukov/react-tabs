@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-  width: 650px;
+  width: 667px;
   height: 500px;
   background-color: #fff;
   border-radius: 10px;
@@ -19,20 +20,33 @@ body {
 }
 
 .tabs-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: #f0f0f0;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .tab {
   padding: 10px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  flex: 1;
+  flex-grow: 1;
   text-align: center;
 }
 
-.tab-active {
-  border-bottom: 2px solid #007bff;
+.tab:hover {
+  background-color: #c4c0c0;
+}
+
+.tab:active {
+  background-color: #7c7a7a;
+}
+
+.tab-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #005bff;
+  transition: transform 0.5s ease;
 }
