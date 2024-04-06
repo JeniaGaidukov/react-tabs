@@ -21,8 +21,10 @@ export const App = () => {
   };
 
   useEffect(() => {
+
     // const tabIndex = options.findIndex((option) => option.value === activeTab);
     // Альтернативное решение если в массиве будут разные значения
+    
     const tabWidth = refElement.current.children[activeTab - 1].offsetWidth;
     const tabOffset = refElement.current.children[activeTab - 1].offsetLeft;
     refElement.current.querySelector(
