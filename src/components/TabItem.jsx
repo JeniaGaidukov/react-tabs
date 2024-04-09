@@ -1,5 +1,5 @@
 export const TabItem = (props) => {
-  const { option, isActive, onChange } = props;
+  const { option, isActive, onChange, renderTab } = props;
 
   const handleClick = () => {
     onChange(option.value);
@@ -11,6 +11,7 @@ export const TabItem = (props) => {
       onClick={handleClick}
     >
       {option.label}
+      {/* {renderTab()} */}
     </div>
   );
 };
